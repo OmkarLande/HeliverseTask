@@ -21,7 +21,7 @@ app.use(
 );
 
 app.use("/api", userRoutes);
-// app.use('/api/',teamRoutes)
+app.use('/api',teamRoutes)
 
 app.get("/", (req, res) => {
   res.send("hello from simple server :)");
